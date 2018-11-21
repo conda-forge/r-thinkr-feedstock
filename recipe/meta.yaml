@@ -14,9 +14,9 @@ source:
   sha256: abedbf40ebef097242907043a5117e42fefa76202b8312676908c76cbfac83c8
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -67,8 +67,7 @@ about:
     we built a set of functions that will avoid the majority of importation problems
     and keep all the data at best.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
