@@ -27,6 +27,7 @@ requirements:
   host:
     - r-base
     - r-assertthat
+    - r-crayon
     - r-devtools
     - r-dplyr
     - r-ggplot2
@@ -34,6 +35,8 @@ requirements:
     - r-lubridate
     - r-magrittr
     - r-officer
+    - r-purrr
+    - r-readr
     - r-rvg
     - r-stringi
     - r-stringr
@@ -41,6 +44,7 @@ requirements:
   run:
     - r-base
     - r-assertthat
+    - r-crayon
     - r-devtools
     - r-dplyr
     - r-ggplot2
@@ -48,6 +52,8 @@ requirements:
     - r-lubridate
     - r-magrittr
     - r-officer
+    - r-purrr
+    - r-readr
     - r-rvg
     - r-stringi
     - r-stringr
@@ -60,18 +66,13 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=thinkr
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Some tools for cleaning up messy 'Excel' files to be suitable for R. People who have been working with 'Excel' for years built more or less complicated sheets with names, characters, formats that are not homogeneous. To be able to use them in R nowadays, we built a set of functions that will avoid the majority
     of importation problems and keep all the data at best.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
