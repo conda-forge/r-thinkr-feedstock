@@ -1,4 +1,4 @@
-{% set version = "0.15" %}
+{% set version = "0.16" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/thinkr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/thinkr/thinkr_{{ version }}.tar.gz
-  sha256: 8fb9043d827447a49806403327ee47e10cce37e0a0a34ffb467337750ce0ae9e
+  sha256: e2fec6d4ff1390d9b432e3c3bd0dfe9db792f6ca90e120ce4a404c07ce239680
 
 build:
   noarch: generic
