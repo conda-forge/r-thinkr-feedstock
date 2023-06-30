@@ -1,11 +1,11 @@
-About r-thinkr
-==============
+About r-thinkr-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-thinkr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=thinkr
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-thinkr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Some tools for cleaning up messy 'Excel' files to be suitable for R. People who have been working with 'Excel' for years built more or less complicated sheets with names, characters, formats that are not homogeneous. To be able to use them in R nowadays, we built a set of functions that will avoid the majority of importation problems and keep all the data at best.
 
